@@ -1,5 +1,5 @@
 {% set name = "openqasm3" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/openqasm3-{{ version }}.tar.gz
-  sha256: 3f2bb1cca855cff114e046bac22d59adbf9b754cac6398961aa6d22588fb688e
+  sha256: c589dc05d4ced50ca24167d14e0f2c916e717499ba0442e0ff2a3030ef312d0a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
